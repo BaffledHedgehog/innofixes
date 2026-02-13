@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Specification-Title: innofixes
+Specification-Version: 1.0.3
+Implementation-Title: innofixes
+Implementation-Version: 1.0.3
+MixinConfigs: mixins.innofixes.json
+

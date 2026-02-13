@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "minVersion": "0.8.5",
+    "package": "baffledhedgehog.innofixes.mixin",
+    "refmap": "mixins.innofixes.refmap.json",
+    "client": [
+    ],
+    "debug": {
+        "export": true
+    }
+}

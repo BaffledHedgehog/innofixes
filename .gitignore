@@ -1,0 +1,10 @@
+build/
+bin/
+jm-src/
+vineflower-1.11.1.jar
+shaderpacks/
+.gradle/
+.vscode/
+assets/
+net/
+run/
