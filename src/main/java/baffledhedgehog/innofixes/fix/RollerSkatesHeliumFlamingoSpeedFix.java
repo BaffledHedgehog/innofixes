@@ -18,9 +18,9 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = InnoFixes.MOD_ID)
 public final class RollerSkatesHeliumFlamingoSpeedFix {
-    private static final float AIRBORNE_SAFE_FRICTION = 0.91F;
     private static final double ROLLER_SKATES_SLIPPERINESS = 1.075D;
     private static final double GROUND_DRAG_FACTOR = 0.91D;
+    private static final float AIRBORNE_SAFE_DRAG = (float) (ROLLER_SKATES_SLIPPERINESS * GROUND_DRAG_FACTOR);
     private static final double VANILLA_GROUND_ACCELERATION_FACTOR = 0.21600002D;
     private static final double MAX_STABLE_GROUND_DRAG = 0.99D;
 
@@ -58,8 +58,8 @@ public final class RollerSkatesHeliumFlamingoSpeedFix {
             return;
         }
 
-        // Prevent >1 friction in air, which causes geometric speed growth with skates acceleration.
-        event.setFriction(Math.min(event.getFriction(), AIRBORNE_SAFE_FRICTION));
+        // Match skates-like glide while keeping drag below 1.0 (no geometric growth).
+        event.setFriction(Math.min(event.getFriction(), AIRBORNE_SAFE_DRAG));
     }
 
     private static boolean isConflictActive(Player player, ItemStack rollerSkatesStack) {
