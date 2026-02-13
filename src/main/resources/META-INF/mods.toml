@@ -4,10 +4,10 @@ license="none"
 
 [[mods]]
 modId="innofixes"
-version="1.0.0"
-displayName="innofixes"
+version="${file.jarVersion}"
+displayName="InnoFixes"
 authors="baffledhedgehog"
-description='''i love crashing'''
+description='''Моё тело это машина превращающая баги в ещё больше багов'''
 
 [[dependencies.innofixes]]
 modId="forge"
@@ -21,4 +21,18 @@ modId="minecraft"
 mandatory=true
 versionRange="[1.20.1,)"
 ordering="NONE"
+side="BOTH"
+
+[[dependencies.innofixes]]
+modId="artifacts"
+mandatory=true
+versionRange="[9.5.16,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.innofixes]]
+modId="relics"
+mandatory=true
+versionRange="[0.8.0.11,)"
+ordering="AFTER"
 side="BOTH"
