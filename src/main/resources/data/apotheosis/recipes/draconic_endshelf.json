@@ -17,7 +17,7 @@
       "item": "minecraft:dragon_head"
     },
     "P": {
-      "tag": "mna:major_mana_gem"
+      "item": "mna:major_mana_gem"
     },
     "E": {
       "item": "apotheosis:endshelf"

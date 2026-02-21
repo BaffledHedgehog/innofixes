@@ -13,7 +13,7 @@
       "tag": "balm:gold_nuggets"
     },
     "E": {
-      "tag": "mna:bed_charm"
+      "item": "mna:bed_charm"
     },
     "P": {
       "item": "minecraft:paper"

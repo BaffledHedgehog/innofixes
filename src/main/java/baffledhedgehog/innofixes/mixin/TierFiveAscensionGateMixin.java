@@ -13,8 +13,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class TierFiveAscensionGateMixin {
     private static final String KEY_LAST_FACTION_RITUAL = "innofixes_last_faction_ritual";
 
-    @Inject(method = "setTier", at = @At("HEAD"), cancellable = true, remap = false)
-    private void innofixes$requireTier5FactionRitualForTierFiveAscension(int newTier, Player player, CallbackInfo ci) {
+    @Inject(method = "setTier(ILnet/minecraft/world/entity/player/Player;Z)V", at = @At("HEAD"), cancellable = true, remap = false)
+    private void innofixes$requireTier5FactionRitualForTierFiveAscension(
+        int newTier,
+        Player player,
+        boolean notifyPlayer,
+        CallbackInfo ci
+    ) {
         if (player == null) {
             return;
         }

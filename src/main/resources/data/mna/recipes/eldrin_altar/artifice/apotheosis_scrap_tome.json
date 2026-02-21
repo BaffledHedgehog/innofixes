@@ -11,7 +11,8 @@
     "minecraft:book",
     "minecraft:book",
     "minecraft:book",
-    "minecraft:book"
+    "minecraft:book",
+    "mna:epic_material"
   ],
   "power_requirements": [
     {

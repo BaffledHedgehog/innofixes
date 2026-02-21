@@ -21,7 +21,7 @@
       "tag": "forge:storage_blocks/diamond"
     },
 	"E": {
-      "tag": "mna:pylon/repair"
+      "item": "mna:pylon/repair"
     }
   },
   "result": {

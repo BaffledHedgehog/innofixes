@@ -27574,5 +27574,189 @@
       }
     ]
   },
+  "Infernal Initiation into the Pillar of Hell / Инфернальное посвящение в Столп Ада": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Infernal Initiation into the Pillar of Hell / Инфернальное посвящение в Столп Ада"
+      },
+      {
+        "type": "text",
+        "value": "Tier 5 ascension ritual for the Demons faction."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/burning_hells_tier5"
+      }
+    ]
+  },
+  "Infernal Initiation into the Pillar of Hell: Ascension Notes / Инфернальное посвящение в Столп Ада: заметки": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Infernal Initiation into the Pillar of Hell: Ascension Notes / Инфернальное посвящение в Столп Ада: заметки"
+      },
+      {
+        "type": "text",
+        "value": "For Tier 4 -> Tier 5, perform this ritual. Complete it the same way as Ritual of the Burning Hells: only the ritual pattern and reagents are changed."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/burning_hells"
+      },
+      {
+        "type": "ritual",
+        "location": "mna:rituals/burning_hells_tier5"
+      }
+    ]
+  },
+  "Gensokyo Ritual of Final Initiation / Генсокийский ритуал финального посвящения": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Gensokyo Ritual of Final Initiation / Генсокийский ритуал финального посвящения"
+      },
+      {
+        "type": "text",
+        "value": "Tier 5 ascension ritual for the Fey faction."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/faerie_courts_tier5"
+      }
+    ]
+  },
+  "Gensokyo Ritual of Final Initiation: Ascension Notes / Генсокийский ритуал финального посвящения: заметки": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Gensokyo Ritual of Final Initiation: Ascension Notes / Генсокийский ритуал финального посвящения: заметки"
+      },
+      {
+        "type": "text",
+        "value": "For Tier 4 -> Tier 5, perform this ritual. Complete it the same way as Ritual of the Faerie Courts: only the ritual pattern and reagents are changed."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/faerie_courts"
+      },
+      {
+        "type": "ritual",
+        "location": "mna:rituals/faerie_courts_tier5"
+      }
+    ]
+  },
+  "Initiation into the greatest Ultra-SSS-Rank sorcerer / Посвящение в величайшего колдуна Ультра-SSS-Ранга": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Initiation into the greatest Ultra-SSS-Rank sorcerer / Посвящение в величайшего колдуна Ультра-SSS-Ранга"
+      },
+      {
+        "type": "text",
+        "value": "Tier 5 ascension ritual for the Council faction."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/ancient_council_tier5"
+      }
+    ]
+  },
+  "Initiation into the greatest Ultra-SSS-Rank sorcerer: Ascension Notes / Посвящение в величайшего колдуна: заметки": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Initiation into the greatest Ultra-SSS-Rank sorcerer: Ascension Notes / Посвящение в величайшего колдуна: заметки"
+      },
+      {
+        "type": "text",
+        "value": "For Tier 4 -> Tier 5, perform this ritual. Complete it the same way as Ritual of the Wizard's Council: only the ritual pattern and reagents are changed."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/ancient_council"
+      },
+      {
+        "type": "ritual",
+        "location": "mna:rituals/ancient_council_tier5"
+      }
+    ]
+  },
+  "Death Cemetery Skulls Graves / Смерть Кладбище Черепа Могилы": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Death Cemetery Skulls Graves / Смерть Кладбище Черепа Могилы"
+      },
+      {
+        "type": "text",
+        "value": "Tier 5 ascension ritual for the Undead faction."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/cold_dark_tier5"
+      }
+    ]
+  },
+  "Death Cemetery Skulls Graves: Ascension Notes / Смерть Кладбище Черепа Могилы: заметки": {
+    "index": 0,
+    "category": "rituals",
+    "tier": 4,
+    "sections": [
+      {
+        "type": "title",
+        "value": "Death Cemetery Skulls Graves: Ascension Notes / Смерть Кладбище Черепа Могилы: заметки"
+      },
+      {
+        "type": "text",
+        "value": "For Tier 4 -> Tier 5, perform this ritual. Complete it the same way as Ritual of the Cold Dark: only the ritual pattern and reagents are changed."
+      }
+    ],
+    "related_recipes": [
+      {
+        "type": "ritual",
+        "location": "mna:rituals/cold_dark"
+      },
+      {
+        "type": "ritual",
+        "location": "mna:rituals/cold_dark_tier5"
+      }
+    ]
+  },
   "version": "3.0.0.0"
 }
