@@ -9,13 +9,13 @@
   "results": [
     {
       "chance": 1,
-      "item": "tfmg:aluminum_ingot",
-      "count": 6
+      "item": "tfmg:bauxide_powder",
+      "count": 16
     },
     {
       "chance": 0.5,
-      "item": "tfmg:aluminum_ingot",
-      "count": 3
+      "item": "tfmg:bauxide_powder",
+      "count": 8
     }
   ]
 }
