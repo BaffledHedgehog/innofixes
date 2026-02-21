@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+	"type": "apotheosis:module",
+    "module": "enchantment"
+  }],
+  "group": "wooden_door",
+  "pattern": [
+    "AHA",
+    "HSH",
+    "AHA"
+  ],
+  "key": {
+    "A": {
+      "item": "tconstruct:ender_slime_crystal_block"
+    },
+	"H": {
+      "item": "mna:witherbone"
+    },
+	"S": {
+      "item": "apotheosis:rectifier_t2"
+    }
+  },
+  "result": {
+    "item": "apotheosis:rectifier_t3",
+    "count": 1
+  }
+}

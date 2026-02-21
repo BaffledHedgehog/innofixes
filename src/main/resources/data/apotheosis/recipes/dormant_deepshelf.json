@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "group": "lemons",
+  "pattern": [
+    "EEE",
+    "BMB",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "tag": "apotheosis:deepslate"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "M": {
+      "item": "mna:greater_mote_arcane"
+    }
+  },
+  "result": {
+    "item": "apotheosis:dormant_deepshelf",
+    "count": 1
+  }
+}

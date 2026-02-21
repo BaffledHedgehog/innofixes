@@ -1,0 +1,9 @@
+{
+  "innofixes:rituals/tier5_requires_new_ritual": "Для возвышения с 4 на 5 тир нужен ритуал: %s.",
+  "innofixes:rituals/use_tier5_variant": "Для перехода с 4 на 5 тир используйте ритуал: %s.",
+  "mna:rituals/ancient_council_tier5": "Посвящение в величайшего колдуна Ультра-SSS-Ранга",
+  "mna:rituals/burning_hells_tier5": "Инфернальное посвящение в Столп Ада",
+  "mna:rituals/faerie_courts_tier5": "Генсокийский ритуал финального посвящения",
+  "mna:rituals/cold_dark_tier5": "Смерть Кладбище Черепа Могилы",
+  "mna:tier_4/advance_tier_5.description": "Перейдите на 5-й тир, завершив великий ритуал возвышения своей фракции."
+}

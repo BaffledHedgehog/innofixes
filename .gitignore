@@ -6,5 +6,8 @@ shaderpacks/
 .gradle/
 .vscode/
 assets/
+!src/main/resources/assets/
+!src/main/resources/assets/**
 net/
 run/
+help stuff/

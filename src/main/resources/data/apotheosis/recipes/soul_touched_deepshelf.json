@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+	"type": "apotheosis:module",
+    "module": "enchantment"
+  }],
+  "group": "lemons",
+  "pattern": [
+    " C ",
+    " B ",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "mna:minor_mana_gem"
+    },
+	"B": {
+      "item": "apotheosis:deepshelf"
+    },
+	"C": {
+      "item": "mna:mote_earth"
+    }
+  },
+  "result": {
+    "item": "apotheosis:soul_touched_deepshelf",
+    "count": 1
+  }
+}

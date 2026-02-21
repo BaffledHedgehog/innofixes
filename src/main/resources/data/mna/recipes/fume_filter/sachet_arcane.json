@@ -1,0 +1,8 @@
+﻿{
+    "type":  "mna:eldrin-fume",
+    "item":  "mna:sachet_arcane",
+    "power_provided":  {
+                           "affinity":  "ARCANE",
+                           "amount":  800
+                       }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "quark:permafrost"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 1,
+      "item": "minecraft:coarse_dirt"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:blue_ice"
+    }
+  ]
+}

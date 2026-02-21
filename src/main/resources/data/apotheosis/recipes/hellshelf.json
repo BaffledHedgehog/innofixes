@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "conditions": [
+        {
+            "type": "apotheosis:module",
+            "module": "enchantment"
+        }
+    ],
+    "pattern": [
+        "PPP",
+        "WBH",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:nether_bricks"
+        },
+        "W": {
+            "item": "mna:mote_fire"
+        },
+        "B": {
+            "tag": "forge:bookshelves"
+        },
+        "H": {
+            "type": "forge:nbt",
+            "item": "minecraft:potion",
+            "nbt": "{\"Potion\":\"minecraft:regeneration\"}"
+        }
+    },
+    "result": {
+        "item": "apotheosis:hellshelf",
+        "count": 1
+    }
+}

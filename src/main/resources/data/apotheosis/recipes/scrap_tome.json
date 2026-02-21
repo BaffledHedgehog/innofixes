@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "apotheosis:scrap_tome"
+    }
+  ],
+  "result": {
+    "item": "apotheosis:scrap_tome",
+    "count": 1
+  }
+}

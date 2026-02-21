@@ -1,0 +1,9 @@
+{
+  "innofixes:rituals/use_tier5_variant": "For Tier 4 -> Tier 5 progression, use %s.",
+  "innofixes:rituals/tier5_requires_new_ritual": "Tier 4 -> Tier 5 ascension requires %s.",
+  "mna:rituals/ancient_council_tier5": "Initiation into the greatest Ultra-SSS-Rank sorcerer",
+  "mna:rituals/burning_hells_tier5": "Infernal Initiation into the Pillar of Hell",
+  "mna:rituals/faerie_courts_tier5": "Gensokyo Ritual of Final Initiation",
+  "mna:rituals/cold_dark_tier5": "Death Cemetery Skulls Graves",
+  "mna:tier_4/advance_tier_5.description": "Advance to Tier 5 by completing your faction's grand ascension ritual."
+}

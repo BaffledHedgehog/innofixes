@@ -1,0 +1,26 @@
+{
+  "type": "mna:eldrin-altar",
+  "output": "apotheosis:scrap_tome",
+  "quantity": 8,
+  "tier": 4,
+  "items": [
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book",
+    "minecraft:book"
+  ],
+  "power_requirements": [
+    {
+      "affinity": "ARCANE",
+      "amount": 1000
+    },
+    {
+      "affinity": "ENDER",
+      "amount": 500
+    }
+  ]
+}

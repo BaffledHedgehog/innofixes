@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "waystones:warp_stone"
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DED",
+    "EGE",
+    "DED"
+  ],
+  "key": {
+    "G": {
+      "tag": "mna:mote_ender"
+    },
+    "E": {
+      "item": "mna:bed_charm"
+    },
+    "D": {
+      "item": "mna:ritual_focus_greater"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "type": "mna:ritual",
+  "tier": 4,
+  "pattern": [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0],
+    [0, 0, 0, 0, 0, 7, 0, 0, 0, 8, 8, 8, 0],
+    [0, 0, 0, 0, 7, 7, 7, 7, 0, 0, 8, 0, 0],
+    [0, 0, 5, 0, 0, 7, 0, 0, 0, 0, 8, 0, 0],
+    [0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 8, 0, 0],
+    [0, 0, 5, 0, 0, 0, 6, 0, 0, 0, 8, 0, 0],
+    [0, 0, 5, 0, 6, 6, 6, 6, 0, 0, 8, 0, 0],
+    [0, 0, 5, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 0, 0],
+    [0, 1, 0, 2, 2, 2, 0, 3, 0, 4, 4, 4, 0],
+    [0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0],
+    [1, 1, 1, 0, 2, 0, 3, 3, 3, 0, 4, 0, 0],
+    [0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0]
+  ],
+  "reagents": [
+    "0000000000800",
+    "0000070008H80",
+    "00007G7700800",
+    "0050070000800",
+    "05E5000000800",
+    "0050006000800",
+    "005066F600800",
+    "0050006000000",
+    "0000200000400",
+    "0102B20304D40",
+    "0100200300400",
+    "1A10203C30400",
+    "0100200300400"
+  ],
+  "keys": {
+    "1": {
+      "item": "minecraft:spawner",
+      "optional": false,
+      "consume": true
+    },
+    "2": {
+      "item": "minecraft:wither_skeleton_skull",
+      "optional": false,
+      "consume": true
+    },
+    "3": {
+      "item": "integrateddynamics:proto_chorus",
+      "optional": false,
+      "consume": true
+    },
+    "4": {
+      "item": "quark:permafrost",
+      "optional": false,
+      "consume": true
+    },
+    "5": {
+      "item": "endrem:undead_soul",
+      "optional": false,
+      "consume": true
+    },
+    "6": {
+      "item": "mna:cloud_in_a_bottle",
+      "optional": false,
+      "consume": true
+    },
+    "7": {
+      "item": "tconstruct:cobalt_block",
+      "optional": false,
+      "consume": true
+    },
+    "8": {
+      "item": "minecraft:totem_of_undying",
+      "optional": false,
+      "consume": true
+    },
+    "A": {
+      "item": "mna:mote_ender",
+      "optional": false,
+      "consume": true
+    },
+    "B": {
+      "item": "mna:greater_mote_ender",
+      "optional": false,
+      "consume": true
+    },
+    "C": {
+      "item": "bosses_of_mass_destruction:mob_ward",
+      "optional": false,
+      "consume": true
+    },
+    "D": {
+      "item": "mna:warding_candle",
+      "optional": false,
+      "consume": true
+    },
+    "E": {
+      "item": "endrem:undead_eye",
+      "optional": false,
+      "consume": true
+    },
+    "F": {
+      "item": "endrem:cryptic_eye",
+      "optional": false,
+      "consume": true
+    },
+    "G": {
+      "item": "endrem:evil_eye",
+      "optional": false,
+      "consume": true
+    },
+    "H": {
+      "item": "artifacts:chorus_totem",
+      "optional": false,
+      "consume": true
+    }
+  },
+  "manaweave": [
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/knot",
+    "mna:manaweave_patterns/diamond",
+    "mna:manaweave_patterns/knot3",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/knot",
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/square"
+  ],
+  "parameters": {
+    "innerColor": "0x1E0740",
+    "outerColor": "0x7ECCD6",
+    "displayIndexes": false,
+    "connectBeam": false
+  }
+}

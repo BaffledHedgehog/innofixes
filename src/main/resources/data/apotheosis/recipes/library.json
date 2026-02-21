@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "group": "lemons",
+  "pattern": [
+    "123",
+    "4S5",
+    "678"
+  ],
+  "key": {
+    "S": {
+      "item": "apotheosis:filtering_shelf"
+    },
+    "1": {
+      "type": "forge:nbt",
+      "item": "mna:rune_arcane",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:efficiency\",\"lvl\": 5s}]}"
+    },
+    "2": {
+      "type": "forge:nbt",
+      "item": "mna:rune_arcane",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:fortune\",\"lvl\": 3s}]}"
+    },
+    "3": {
+      "type": "forge:nbt",
+      "item": "mna:rune_ender",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:looting\",\"lvl\": 3s}]}"
+    },
+    "4": {
+      "type": "forge:nbt",
+      "item": "mna:rune_fire",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:sharpness\",\"lvl\": 5s}]}"
+    },
+    "5": {
+      "type": "forge:nbt",
+      "item": "mna:rune_earth",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:unbreaking\",\"lvl\": 3s}]}"
+    },
+    "6": {
+      "type": "forge:nbt",
+      "item": "mna:rune_earth",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:mending\",\"lvl\": 1s}]}"
+    },
+    "7": {
+      "type": "forge:nbt",
+      "item": "mna:rune_air",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\": 1s}]}"
+    },
+    "8": {
+      "type": "forge:nbt",
+      "item": "mna:rune_air",
+      "nbt": "{\"Enchantments\": [{\"id\":\"minecraft:power\",\"lvl\": 5s}]}"
+    }
+  },
+  "result": {
+    "item": "apotheosis:library",
+    "count": 1
+  }
+}

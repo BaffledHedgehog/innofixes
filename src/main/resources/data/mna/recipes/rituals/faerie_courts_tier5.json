@@ -1,0 +1,98 @@
+{
+  "type": "mna:ritual",
+  "tier": 4,
+  "pattern": [
+    [0 ,10,10,10, 9, 9, 1, 9, 9,10,10,10, 0],
+    [10,10, 7, 8, 9, 9, 1, 9, 9, 8, 7,10,10],
+    [10,10, 6, 0, 8, 1, 1, 1, 8, 0, 6,10,10],
+    [10, 0, 5, 8, 0, 1, 1, 1, 0, 8, 5, 0,10],
+    [10, 0, 4, 0, 8, 1, 1, 1, 8, 0, 4, 0,10],
+    [0 , 0, 0, 3, 0, 1, 1, 1, 0, 3, 0, 0, 0],
+    [0 , 0, 0, 0, 2, 1, 1, 1, 2, 0, 0, 0, 0],
+    [0 , 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+    [0 , 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+    [0 , 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0],
+    [0 , 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0],
+    [0 , 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0],
+    [1 , 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "reagents": [
+    " AAA99199AAA ",
+    "AA789919987AA",
+    "AA6 81118 6AA",
+    "A 58 111 85 A",
+    "A 4 81118 4 A",
+    "   3 111 3   ",
+    "    21112    ",
+    "     111     ",
+    "     111     ",
+    "  1  111  1  ",
+    " 1 1 111 1 1 ",
+    "  1  111  1  ",
+    "1111111111111"
+  ],
+  "keys": {
+    "1": {
+      "item": "mna:chimerite_block",
+      "optional": false,
+      "consume": true
+    },
+    "2": {
+      "item": "mna:greater_mote_air",
+      "optional": false,
+      "consume": true
+    },
+    "6": {
+      "item": "mna:greater_mote_earth",
+      "optional": false,
+      "consume": true
+    },
+    "7": {
+      "item": "mna:crystal_of_memories",
+      "optional": false,
+      "consume": true
+    },
+    "3": {
+      "item": "mna:greater_mote_water",
+      "optional": false,
+      "consume": true
+    },
+    "4": {
+      "item": "mna:ritual/fey_flowers",
+      "optional": false,
+      "consume": true
+    },
+    "5": {
+      "item": "endrem:exotic_eye",
+      "optional": false,
+      "consume": true
+    },
+    "8": {
+      "item": "minecraft:turtle_egg",
+      "optional": false,
+      "consume": true
+    },
+    "9": {
+      "item": "bosses_of_mass_destruction:ancient_anima",
+      "optional": false,
+      "consume": true
+    },
+    "A": {
+      "item": "minecraft:amethyst_block",
+      "optional": false,
+      "consume": true
+    }
+  },
+  "manaweave": [
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/inverted_triangle"
+  ],
+  "parameters": {
+    "innerColor": "0x00CC00",
+    "outerColor": "0x6600FF",
+    "displayIndexes": false,
+    "beamColor": "0xcc1bc9"
+  }
+}

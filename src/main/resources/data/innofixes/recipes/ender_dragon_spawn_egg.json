@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "minecraft:egg"
+        },
+        {
+            "item": "mna:greater_mote_ender"
+        }
+    ],
+    "result": {
+        "item": "minecraft:dragon_egg",
+        "count": 1
+    }
+}

@@ -1,0 +1,8 @@
+﻿{
+    "type":  "mna:eldrin-fume",
+    "item":  "mna:sachet_air",
+    "power_provided":  {
+                           "affinity":  "WIND",
+                           "amount":  800
+                       }
+}

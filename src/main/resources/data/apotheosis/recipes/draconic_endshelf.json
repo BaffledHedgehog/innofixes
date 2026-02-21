@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "group": "wooden_door",
+  "pattern": [
+    " D ",
+    "PEP",
+    "NAN"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dragon_head"
+    },
+    "P": {
+      "tag": "mna:major_mana_gem"
+    },
+    "E": {
+      "item": "apotheosis:endshelf"
+    },
+    "N": {
+      "tag": "forge:ingots/netherite"
+    },
+    "A": {
+      "item": "mna:greater_mote_ender"
+    }
+  },
+  "result": {
+    "item": "apotheosis:draconic_endshelf",
+    "count": 1
+  }
+}

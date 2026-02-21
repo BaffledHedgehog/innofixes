@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "group": "lemons",
+  "pattern": [
+    " E ",
+    "EBE",
+    "CSD"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "B": {
+      "item": "apotheosis:deepshelf"
+    },
+    "C": {
+      "item": "mna:rune_earth"
+    },
+    "D": {
+      "item": "mna:rune_arcane"
+    },
+    "S": {
+      "item": "mna:mote_earth"
+    }
+  },
+  "result": {
+    "item": "apotheosis:echoing_deepshelf",
+    "count": 1
+  }
+}

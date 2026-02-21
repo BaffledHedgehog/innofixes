@@ -1,0 +1,91 @@
+{
+  "type": "mna:ritual",
+  "tier": 4,
+  "pattern": [
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 15, 0, 0, 0, 0, 2, 0, 15, 0, 1],
+    [1, 0, 15, 0, 0, 0, 0, 3, 0, 15, 0, 15, 1],
+    [1, 15, 0, 6, 0, 0, 4, 0, 0, 6, 15, 0, 1],
+    [1, 2, 0, 0, 7, 5, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 3, 0, 0, 0, 9, 0, 5, 0, 0, 0, 1],
+    [1, 0, 0, 4, 0, 10, 12, 8, 0, 4, 0, 0, 1],
+    [1, 0, 0, 0, 5, 0, 11, 0, 0, 0, 3, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 5, 7, 0, 0, 2, 1],
+    [1, 15, 0, 6, 0, 0, 4, 0, 0, 6, 0, 15, 1],
+    [1, 15, 15, 0, 0, 3, 0, 0, 0, 0, 15, 0, 1],
+    [1, 0, 15, 15, 2, 0, 0, 0, 0, 15, 0, 15, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "reagents": [
+    "VVVVVVVVVVVVV",
+    "V       V   V",
+    "V      V    V",
+    "V  E  V  E  V",
+    "VV  BV      V",
+    "V V   N V   V",
+    "V  V NAN V  V",
+    "V   V N   V V",
+    "V      VS  VV",
+    "V  E  V  E  V",
+    "V    V      V",
+    "V   V       V",
+    "VVVVVVVVVVVVV"
+  ],
+  "keys": {
+    "B": {
+      "item": "mna:greater_mote_arcane",
+      "optional": false,
+      "consume": true
+    },
+    "E": {
+      "item": "apotheosis:tome_of_extraction",
+      "optional": false,
+      "consume": true
+    },
+    "S": {
+      "item": "mna:spell_book",
+      "optional": false,
+      "consume": true
+    },
+    "A": {
+      "item": "apotheosis:treasure_shelf",
+      "optional": false,
+      "consume": false
+    },
+    "N": {
+      "item": "minecraft:nether_star",
+      "optional": false,
+      "consume": true
+    },
+    "V": {
+      "item": "mna:vinteum_block",
+      "optional": false,
+      "consume": true
+    }
+  },
+  "manaweave": [
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/knot",
+    "mna:manaweave_patterns/diamond",
+    "mna:manaweave_patterns/knot3",
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/inverted_triangle",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/inverted_triangle"
+  ],
+  "parameters": {
+    "innerColor": "0x00CC00",
+    "outerColor": "0x6600FF",
+    "displayIndexes": false,
+    "connectBeam": false
+  }
+}

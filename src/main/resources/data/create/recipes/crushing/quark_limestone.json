@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "quark:limestone"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 1,
+      "item": "tfmg:limesand"
+    },
+    {
+      "chance": 0.12,
+      "item": "minecraft:quartz"
+    },
+    {
+      "chance": 0.08,
+      "item": "minecraft:lapis_lazuli"
+    }
+  ]
+}

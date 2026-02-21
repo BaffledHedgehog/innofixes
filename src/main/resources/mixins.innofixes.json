@@ -3,6 +3,14 @@
     "minVersion": "0.8.5",
     "package": "baffledhedgehog.innofixes.mixin",
     "refmap": "mixins.innofixes.refmap.json",
+    "mixins": [
+        "ApotheosisFlightPotionIngredientMixin",
+        "FactionRitualAttemptMarkerMixin",
+        "FactionTier5OcculusPromptMixin",
+        "RunePatternDurabilityMixin",
+        "TierFiveAscensionGateMixin",
+        "RunicAnvilHammerCooldownMixin"
+    ],
     "client": [
     ],
     "debug": {

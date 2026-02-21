@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "apotheosis:module",
+      "module": "enchantment"
+    }
+  ],
+  "pattern": [
+    "SAS",
+    "ACA",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "apotheosis:prismatic_web",
+    "count": 1
+  }
+}
