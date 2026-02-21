@@ -4,6 +4,7 @@
   "quantity": 8,
   "tier": 4,
   "items": [
+    "apotheosis:epic_material",
     "minecraft:book",
     "minecraft:book",
     "minecraft:book",
@@ -11,8 +12,7 @@
     "minecraft:book",
     "minecraft:book",
     "minecraft:book",
-    "minecraft:book",
-    "apotheosis:epic_material"
+    "minecraft:book"
   ],
   "power_requirements": [
     {

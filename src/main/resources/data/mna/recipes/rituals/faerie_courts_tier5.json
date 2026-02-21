@@ -50,7 +50,7 @@
     "7": {
       "item": "mna:crystal_of_memories",
       "optional": false,
-      "consume": true
+      "consume": false
     },
     "3": {
       "item": "mna:greater_mote_water",
@@ -75,7 +75,7 @@
     "9": {
       "item": "bosses_of_mass_destruction:ancient_anima",
       "optional": false,
-      "consume": true
+      "consume": false
     },
     "A": {
       "item": "minecraft:amethyst_block",

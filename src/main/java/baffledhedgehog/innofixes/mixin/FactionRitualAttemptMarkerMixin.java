@@ -1,6 +1,7 @@
 package baffledhedgehog.innofixes.mixin;
 
 import com.mna.api.rituals.IRitualContext;
+import com.mna.capabilities.playerdata.progression.PlayerProgressionProvider;
 import com.mna.rituals.effects.RitualEffectAncientCouncil;
 import com.mna.rituals.effects.RitualEffectBurningHells;
 import com.mna.rituals.effects.RitualEffectColdDark;
@@ -36,6 +37,32 @@ public abstract class FactionRitualAttemptMarkerMixin {
         caster.getPersistentData().putLong(KEY_LAST_FACTION_RITUAL_TIME, caster.level().getGameTime());
     }
 
+    @Inject(method = "applyRitualEffect", at = @At("RETURN"), remap = false)
+    private void innofixes$forceTierFiveAfterSuccessfulTierFiveRitual(
+        IRitualContext context,
+        CallbackInfoReturnable<Boolean> cir
+    ) {
+        if (context == null || !cir.getReturnValueZ() || context.getCaster() == null || context.getCaster().level().isClientSide()) {
+            return;
+        }
+
+        if (context.getRecipe() == null || context.getRecipe().getRegistryId() == null) {
+            return;
+        }
+
+        String ritualId = normalizeRecipePath(context.getRecipe().getRegistryId());
+        if (!isTierFiveFactionRitual(ritualId)) {
+            return;
+        }
+
+        Player caster = context.getCaster();
+        caster.getCapability(PlayerProgressionProvider.PROGRESSION).ifPresent(progression -> {
+            if (progression.getTier() == 4) {
+                progression.setTier(5, caster);
+            }
+        });
+    }
+
     private static String normalizeRecipePath(ResourceLocation id) {
         String path = id.getPath();
         String normalized = path.substring(path.lastIndexOf('/') + 1);
@@ -45,5 +72,12 @@ public abstract class FactionRitualAttemptMarkerMixin {
                 "ancient_council_tier5", "burning_hells_tier5", "faerie_courts_tier5", "cold_dark_tier5" -> normalized;
             default -> null;
         };
+    }
+
+    private static boolean isTierFiveFactionRitual(String ritualId) {
+        return "ancient_council_tier5".equals(ritualId)
+            || "burning_hells_tier5".equals(ritualId)
+            || "faerie_courts_tier5".equals(ritualId)
+            || "cold_dark_tier5".equals(ritualId);
     }
 }
