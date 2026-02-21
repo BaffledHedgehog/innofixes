@@ -1,0 +1,588 @@
+﻿{
+    "Burning Hells":  {
+                          "index":  0,
+                          "category":  "rituals",
+                          "sections":  [
+                                           {
+                                               "type":  "title",
+                                               "value":  "Ritual of the Burning Hells"
+                                           },
+                                           {
+                                               "type":  "text",
+                                               "json":  [
+                                                            {
+                                                                "text":  "This forbidden ritual summons a "
+                                                            },
+                                                            {
+                                                                "text":  "Demon Lord",
+                                                                "color":  "dark_red"
+                                                            },
+                                                            {
+                                                                "text":  ". \n\nThese demons often offer power to those that seek it, though with power always comes a price. Demons are very powerful, and respect only those that can withstand such power. "
+                                                            },
+                                                            {
+                                                                "text":  "Proper precautions should be taken",
+                                                                "color":  "dark_purple"
+                                                            },
+                                                            {
+                                                                "text":  " before attempting to make an bargain with a demon "
+                                                            },
+                                                            {
+                                                                "text":  "lest the summoner find themselves burned alive",
+                                                                "color":  "dark_purple"
+                                                            },
+                                                            {
+                                                                "text":  ". \n\nTo mollify the rage of the demon, I should have an offering of a "
+                                                            },
+                                                            {
+                                                                "text":  "Mote of Fire",
+                                                                "color":  "blue"
+                                                            },
+                                                            {
+                                                                "text":  " to offer the demon, "
+                                                            },
+                                                            {
+                                                                "text":  "in addition to the ritual reagents",
+                                                                "color":  "blue"
+                                                            },
+                                                            {
+                                                                "text":  ". \n\n"
+                                                            },
+                                                            {
+                                                                "text":  "Allying oneself with such entities will almost assuredly make enemies of others.",
+                                                                "color":  "dark_purple"
+                                                            },
+                                                            {
+                                                                "text":  "\n\nAlternatively, performing this ritual in a "
+                                                            },
+                                                            {
+                                                                "text":  "Demon Arena",
+                                                                "color":  "dark_red"
+                                                            },
+                                                            {
+                                                                "text":  " will challenge the "
+                                                            },
+                                                            {
+                                                                "text":  "Demon Lord",
+                                                                "color":  "dark_red"
+                                                            },
+                                                            {
+                                                                "text":  " to a duel.\n\nTo advance from Tier 4 to Tier 5, I must perform "
+                                                            },
+                                                            {
+                                                                "text":  "Infernal Initiation into the Pillar of Hell",
+                                                                "color":  "dark_red"
+                                                            },
+                                                            {
+                                                                "text":  ". The pact and outcome remain the same, but the ritual pattern and reagents are different."
+                                                            }
+                                                        ]
+                                           }
+                                       ],
+                          "related_recipes":  [
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/burning_hells"
+                                                  },
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/searing_inferno"
+                                                  },
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/burning_hells_tier5"
+                                                  }
+                                              ]
+                      },
+    "Faerie Courts":  {
+                          "index":  0,
+                          "category":  "rituals",
+                          "sections":  [
+                                           {
+                                               "type":  "title",
+                                               "value":  "Ritual of the Faerie Courts"
+                                           },
+                                           {
+                                               "type":  "text",
+                                               "json":  [
+                                                            {
+                                                                "text":  "This forbidden ritual summons a "
+                                                            },
+                                                            {
+                                                                "text":  "Faerie Queen from either Summer or Winter",
+                                                                "color":  "dark_green"
+                                                            },
+                                                            {
+                                                                "text":  ".\n\nThrough bargains, the fey often offer power to those that seek it, though with power always comes a price. An offering of a "
+                                                            },
+                                                            {
+                                                                "text":  "Mote of Air",
+                                                                "color":  "blue"
+                                                            },
+                                                            {
+                                                                "text":  " is usually a good bet, "
+                                                            },
+                                                            {
+                                                                "text":  "in addition to the other ritual reagents",
+                                                                "color":  "blue"
+                                                            },
+                                                            {
+                                                                "text":  ".\n\n"
+                                                            },
+                                                            {
+                                                                "text":  "Allying oneself with such entities will almost assuredly make enemies of others.",
+                                                                "color":  "dark_purple"
+                                                            },
+                                                            {
+                                                                "text":  "\n\nAlternatively, performing this ritual in the right spot within a "
+                                                            },
+                                                            {
+                                                                "text":  "Great Fey Tree",
+                                                                "color":  "dark_green"
+                                                            },
+                                                            {
+                                                                "text":  " will challenge both "
+                                                            },
+                                                            {
+                                                                "text":  "Faerie Queens",
+                                                                "color":  "dark_green"
+                                                            },
+                                                            {
+                                                                "text":  " to a duel.\n\nTo advance from Tier 4 to Tier 5, I must perform "
+                                                            },
+                                                            {
+                                                                "text":  "Gensokyo Ritual of Final Initiation",
+                                                                "color":  "dark_green"
+                                                            },
+                                                            {
+                                                                "text":  ". The covenant remains the same, but the ritual pattern and reagents are different."
+                                                            }
+                                                        ]
+                                           }
+                                       ],
+                          "related_recipes":  [
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/faerie_courts"
+                                                  },
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/untamed_wind"
+                                                  },
+                                                  {
+                                                      "type":  "ritual",
+                                                      "location":  "mna:rituals/faerie_courts_tier5"
+                                                  }
+                                              ]
+                      },
+    "Wizard\u0027s Council":  {
+                                  "index":  0,
+                                  "category":  "rituals",
+                                  "sections":  [
+                                                   {
+                                                       "type":  "title",
+                                                       "value":  "Ritual of the Wizard\u0027s Council"
+                                                   },
+                                                   {
+                                                       "type":  "text",
+                                                       "json":  [
+                                                                    {
+                                                                        "text":  "This ritual summons a conclave from the "
+                                                                    },
+                                                                    {
+                                                                        "text":  "Ancient Council of Wizards",
+                                                                        "color":  "blue"
+                                                                    },
+                                                                    {
+                                                                        "text":  ".\n\nBy doing so, I am offering to align myself with the council in exchange for access to their knowledge of higher magics.\n\nOnce I have summoned the council, I must stand in the center of the circle to receive their blessing, if I believe I am worthy.\n\n"
+                                                                    },
+                                                                    {
+                                                                        "text":  "Allying oneself with such entities will almost assuredly make enemies of others.",
+                                                                        "color":  "dark_purple"
+                                                                    },
+                                                                    {
+                                                                        "text":  "\n\nAlternatively, performing this ritual in a "
+                                                                    },
+                                                                    {
+                                                                        "text":  "Council Great Hall",
+                                                                        "color":  "blue"
+                                                                    },
+                                                                    {
+                                                                        "text":  " will challenge the "
+                                                                    },
+                                                                    {
+                                                                        "text":  "Senior Council",
+                                                                        "color":  "blue"
+                                                                    },
+                                                                    {
+                                                                        "text":  " to a duel. While they almost assuredly will not accept such a challenge, I may instead draw the attention of a "
+                                                                    },
+                                                                    {
+                                                                        "text":  "Council Warden",
+                                                                        "color":  "blue"
+                                                                    },
+                                                                    {
+                                                                        "text":  ".\n\nTo advance from Tier 4 to Tier 5, I must perform "
+                                                                    },
+                                                                    {
+                                                                        "text":  "Initiation into the greatest Ultra-SSS-Rank sorcerer",
+                                                                        "color":  "blue"
+                                                                    },
+                                                                    {
+                                                                        "text":  ". The blessing remains the same, but the ritual pattern and reagents are different."
+                                                                    }
+                                                                ]
+                                                   }
+                                               ],
+                                  "related_recipes":  [
+                                                          {
+                                                              "type":  "ritual",
+                                                              "location":  "mna:rituals/ancient_council"
+                                                          },
+                                                          {
+                                                              "type":  "ritual",
+                                                              "location":  "mna:rituals/ancient_council_tier5"
+                                                          }
+                                                      ]
+                              },
+    "Cold Dark":  {
+                      "index":  0,
+                      "category":  "rituals",
+                      "sections":  [
+                                       {
+                                           "type":  "title",
+                                           "value":  "Ritual of the Cold Dark"
+                                       },
+                                       {
+                                           "type":  "text",
+                                           "json":  [
+                                                        {
+                                                            "text":  "This ritual calls out to the legions of the "
+                                                        },
+                                                        {
+                                                            "text":  "Undead",
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  ".\n\nBy doing so, I am offering to align myself with the undead in exchange for access to their dark powers.\n\nIf the undead respond, they will "
+                                                        },
+                                                        {
+                                                            "text":  "give me a sign",
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  ". I should follow the instructions if I believe I am worthy.\n\nAllying oneself with such entities will almost assuredly make enemies of others.\n\nAlternatively, performing this ritual in a "
+                                                        },
+                                                        {
+                                                            "text":  "Cathedral Great Hall",
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  " will challenge a "
+                                                        },
+                                                        {
+                                                            "text":  "Powerful Undead Monster",
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  " to a duel.\n\nTo advance from Tier 4 to Tier 5, I must perform "
+                                                        },
+                                                        {
+                                                            "text":  "Death Cemetery Skulls Graves",
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  ". The allegiance remains the same, but the ritual pattern and reagents are different."
+                                                        }
+                                                    ]
+                                       },
+                                       {
+                                           "type":  "text",
+                                           "json":  [
+                                                        {
+                                                            "text":  "WARNING: The undead faction is a much more difficult faction to play.",
+                                                            "italic":  true,
+                                                            "color":  "dark_purple"
+                                                        },
+                                                        {
+                                                            "text":  "\n\n"
+                                                        },
+                                                        {
+                                                            "text":  "Your casting resource becomes souls, something that does not naturally regenerate. ",
+                                                            "italic":  true
+                                                        },
+                                                        {
+                                                            "text":  "You must kill others to obtain their souls.",
+                                                            "italic":  true,
+                                                            "color":  "dark_gray"
+                                                        },
+                                                        {
+                                                            "text":  "\n\n\n"
+                                                        },
+                                                        {
+                                                            "text":  "Other undead give the least, then animals, then monsters, then villagers, then players.",
+                                                            "italic":  true
+                                                        },
+                                                        {
+                                                            "text":  "\n\n"
+                                                        },
+                                                        {
+                                                            "text":  "They can sleep in coffins as if they were beds and in doing so will regain 25% of souls, will ",
+                                                            "italic":  true
+                                                        },
+                                                        {
+                                                            "text":  "burn in sunlight",
+                                                            "italic":  true,
+                                                            "color":  "dark_purple"
+                                                        },
+                                                        {
+                                                            "text":  ", but can ",
+                                                            "italic":  true
+                                                        },
+                                                        {
+                                                            "text":  "breathe underwater",
+                                                            "italic":  true,
+                                                            "color":  "dark_purple"
+                                                        },
+                                                        {
+                                                            "text":  ". Wearing a helmet can mitigate the burning but eventually the helmet will burn away and break.",
+                                                            "italic":  true
+                                                        },
+                                                        {
+                                                            "text":  "\n\n"
+                                                        },
+                                                        {
+                                                            "text":  "Choose this path at your own risk.",
+                                                            "italic":  true
+                                                        }
+                                                    ]
+                                       }
+                                   ],
+                      "related_recipes":  [
+                                              {
+                                                  "type":  "ritual",
+                                                  "location":  "mna:rituals/cold_dark"
+                                              },
+                                              {
+                                                  "type":  "ritual",
+                                                  "location":  "mna:rituals/cold_dark_tier5"
+                                              }
+                                          ]
+                  },
+    "Infernal Initiation into the Pillar of Hell":  {
+                                                        "index":  0,
+                                                        "category":  "rituals",
+                                                        "tier":  4,
+                                                        "sections":  [
+                                                                         {
+                                                                             "type":  "title",
+                                                                             "value":  "Infernal Initiation into the Pillar of Hell"
+                                                                         },
+                                                                         {
+                                                                             "type":  "text",
+                                                                             "json":  [
+                                                                                          {
+                                                                                              "text":  "Infernal Initiation into the Pillar of Hell is the Tier 5 ascension ritual for the Demons faction."
+                                                                                          }
+                                                                                      ]
+                                                                         }
+                                                                     ],
+                                                        "related_recipes":  [
+                                                                                {
+                                                                                    "type":  "ritual",
+                                                                                    "location":  "mna:rituals/burning_hells_tier5"
+                                                                                }
+                                                                            ]
+                                                    },
+    "Infernal Initiation into the Pillar of Hell: Ascension Notes":  {
+                                                                         "index":  0,
+                                                                         "category":  "rituals",
+                                                                         "tier":  4,
+                                                                         "sections":  [
+                                                                                          {
+                                                                                              "type":  "title",
+                                                                                              "value":  "Infernal Initiation into the Pillar of Hell: Ascension Notes"
+                                                                                          },
+                                                                                          {
+                                                                                              "type":  "text",
+                                                                                              "json":  [
+                                                                                                           {
+                                                                                                               "text":  "For Tier 4 -\u003e Tier 5, perform Infernal Initiation into the Pillar of Hell. Complete it the same way as Ritual of the Burning Hells: only the ritual pattern and reagents are changed."
+                                                                                                           }
+                                                                                                       ]
+                                                                                          }
+                                                                                      ],
+                                                                         "related_recipes":  [
+                                                                                                 {
+                                                                                                     "type":  "ritual",
+                                                                                                     "location":  "mna:rituals/burning_hells"
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "type":  "ritual",
+                                                                                                     "location":  "mna:rituals/burning_hells_tier5"
+                                                                                                 }
+                                                                                             ]
+                                                                     },
+    "Gensokyo Ritual of Final Initiation":  {
+                                                "index":  0,
+                                                "category":  "rituals",
+                                                "tier":  4,
+                                                "sections":  [
+                                                                 {
+                                                                     "type":  "title",
+                                                                     "value":  "Gensokyo Ritual of Final Initiation"
+                                                                 },
+                                                                 {
+                                                                     "type":  "text",
+                                                                     "json":  [
+                                                                                  {
+                                                                                      "text":  "Gensokyo Ritual of Final Initiation is the Tier 5 ascension ritual for the Fey faction."
+                                                                                  }
+                                                                              ]
+                                                                 }
+                                                             ],
+                                                "related_recipes":  [
+                                                                        {
+                                                                            "type":  "ritual",
+                                                                            "location":  "mna:rituals/faerie_courts_tier5"
+                                                                        }
+                                                                    ]
+                                            },
+    "Gensokyo Ritual of Final Initiation: Ascension Notes":  {
+                                                                 "index":  0,
+                                                                 "category":  "rituals",
+                                                                 "tier":  4,
+                                                                 "sections":  [
+                                                                                  {
+                                                                                      "type":  "title",
+                                                                                      "value":  "Gensokyo Ritual of Final Initiation: Ascension Notes"
+                                                                                  },
+                                                                                  {
+                                                                                      "type":  "text",
+                                                                                      "json":  [
+                                                                                                   {
+                                                                                                       "text":  "For Tier 4 -\u003e Tier 5, perform Gensokyo Ritual of Final Initiation. Complete it the same way as Ritual of the Faerie Courts: only the ritual pattern and reagents are changed."
+                                                                                                   }
+                                                                                               ]
+                                                                                  }
+                                                                              ],
+                                                                 "related_recipes":  [
+                                                                                         {
+                                                                                             "type":  "ritual",
+                                                                                             "location":  "mna:rituals/faerie_courts"
+                                                                                         },
+                                                                                         {
+                                                                                             "type":  "ritual",
+                                                                                             "location":  "mna:rituals/faerie_courts_tier5"
+                                                                                         }
+                                                                                     ]
+                                                             },
+    "Initiation into the greatest Ultra-SSS-Rank sorcerer":  {
+                                                                 "index":  0,
+                                                                 "category":  "rituals",
+                                                                 "tier":  4,
+                                                                 "sections":  [
+                                                                                  {
+                                                                                      "type":  "title",
+                                                                                      "value":  "Initiation into the greatest Ultra-SSS-Rank sorcerer"
+                                                                                  },
+                                                                                  {
+                                                                                      "type":  "text",
+                                                                                      "json":  [
+                                                                                                   {
+                                                                                                       "text":  "Initiation into the greatest Ultra-SSS-Rank sorcerer is the Tier 5 ascension ritual for the Council faction."
+                                                                                                   }
+                                                                                               ]
+                                                                                  }
+                                                                              ],
+                                                                 "related_recipes":  [
+                                                                                         {
+                                                                                             "type":  "ritual",
+                                                                                             "location":  "mna:rituals/ancient_council_tier5"
+                                                                                         }
+                                                                                     ]
+                                                             },
+    "Initiation into the greatest Ultra-SSS-Rank sorcerer: Ascension Notes":  {
+                                                                                  "index":  0,
+                                                                                  "category":  "rituals",
+                                                                                  "tier":  4,
+                                                                                  "sections":  [
+                                                                                                   {
+                                                                                                       "type":  "title",
+                                                                                                       "value":  "Initiation into the greatest Ultra-SSS-Rank sorcerer: Ascension Notes"
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "type":  "text",
+                                                                                                       "json":  [
+                                                                                                                    {
+                                                                                                                        "text":  "For Tier 4 -\u003e Tier 5, perform Initiation into the greatest Ultra-SSS-Rank sorcerer. Complete it the same way as Ritual of the Wizard\u0027s Council: only the ritual pattern and reagents are changed."
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                   }
+                                                                                               ],
+                                                                                  "related_recipes":  [
+                                                                                                          {
+                                                                                                              "type":  "ritual",
+                                                                                                              "location":  "mna:rituals/ancient_council"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "type":  "ritual",
+                                                                                                              "location":  "mna:rituals/ancient_council_tier5"
+                                                                                                          }
+                                                                                                      ]
+                                                                              },
+    "Death Cemetery Skulls Graves":  {
+                                         "index":  0,
+                                         "category":  "rituals",
+                                         "tier":  4,
+                                         "sections":  [
+                                                          {
+                                                              "type":  "title",
+                                                              "value":  "Death Cemetery Skulls Graves"
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "json":  [
+                                                                           {
+                                                                               "text":  "Death Cemetery Skulls Graves is the Tier 5 ascension ritual for the Undead faction."
+                                                                           }
+                                                                       ]
+                                                          }
+                                                      ],
+                                         "related_recipes":  [
+                                                                 {
+                                                                     "type":  "ritual",
+                                                                     "location":  "mna:rituals/cold_dark_tier5"
+                                                                 }
+                                                             ]
+                                     },
+    "Death Cemetery Skulls Graves: Ascension Notes":  {
+                                                          "index":  0,
+                                                          "category":  "rituals",
+                                                          "tier":  4,
+                                                          "sections":  [
+                                                                           {
+                                                                               "type":  "title",
+                                                                               "value":  "Death Cemetery Skulls Graves: Ascension Notes"
+                                                                           },
+                                                                           {
+                                                                               "type":  "text",
+                                                                               "json":  [
+                                                                                            {
+                                                                                                "text":  "For Tier 4 -\u003e Tier 5, perform Death Cemetery Skulls Graves. Complete it the same way as Ritual of the Cold Dark: only the ritual pattern and reagents are changed."
+                                                                                            }
+                                                                                        ]
+                                                                           }
+                                                                       ],
+                                                          "related_recipes":  [
+                                                                                  {
+                                                                                      "type":  "ritual",
+                                                                                      "location":  "mna:rituals/cold_dark"
+                                                                                  },
+                                                                                  {
+                                                                                      "type":  "ritual",
+                                                                                      "location":  "mna:rituals/cold_dark_tier5"
+                                                                                  }
+                                                                              ]
+                                                      }
+}

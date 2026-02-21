@@ -23,8 +23,8 @@
     "     1 1     ",
     "111111 111111",
     "135555 555531",
-    " 115 5 5 511 ",
-    "   155 551   ",
+    " 11585 59511 ",
+    "   165 571   ",
     "  1       1  ",
     "  1  5 5  1  ",
     " 1  41 14  1 ",
@@ -54,6 +54,26 @@
     },
     "5": {
       "item": "bosses_of_mass_destruction:brimstone_nectar",
+      "optional": false,
+      "consume": false
+    },
+    "6": {
+      "item": "bosses_of_mass_destruction:blazing_eye",
+      "optional": false,
+      "consume": false
+    },
+    "7": {
+      "item": "mna:greater_mote_ender",
+      "optional": false,
+      "consume": false
+    },
+    "8": {
+      "item": "fdbosses:fire_and_ice_core",
+      "optional": false,
+      "consume": false
+    },
+    "9": {
+      "item": "bosses_of_mass_destruction:charged_ender_pearl",
       "optional": false,
       "consume": false
     }
