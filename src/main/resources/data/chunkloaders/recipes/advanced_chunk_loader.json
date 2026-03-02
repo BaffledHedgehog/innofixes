@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chunkloaders:ultimate_chunk_loader"
+    }
+  ],
+  "result": {
+    "item": "chunkloaders:single_chunk_loader",
+    "count": 49
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "item": "vschunkloader:chunk_loader"
+    },
+    "C": {
+      "item": "integrateddynamics:coal_generator"
+    },
+    "B": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "result": {
+    "item": "chunkloaders:single_chunk_loader"
+  }
+}
