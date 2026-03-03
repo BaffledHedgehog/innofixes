@@ -6,7 +6,6 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -19,21 +18,18 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.NetworkHooks;
 
 public class ShadeEntity extends Entity {
-    public static final int ABSORB_TRIGGER_VISIBLE_ITEM_ENTITIES = 100;
-    public static final int TARGET_VISIBLE_ITEM_ENTITIES = 70;
+    public static final int ABSORB_TRIGGER_VISIBLE_ITEM_ENTITIES = 50;
+    public static final int TARGET_VISIBLE_ITEM_ENTITIES = 36;
 
     private static final String TAG_ANCHOR_POS = "AnchorPos";
     private static final String TAG_TEMPLATE_STACK = "TemplateStack";
     private static final String TAG_STORED_COUNT = "StoredCount";
     private static final String TAG_RELEASING = "Releasing";
-    private static final String TAG_RELEASE_COOLDOWN = "ReleaseCooldown";
-    private static final int RELEASE_INTERVAL_TICKS = 4;
 
     private BlockPos anchorPos = BlockPos.ZERO;
     private ItemStack templateStack = ItemStack.EMPTY;
     private long storedItemCount;
     private boolean releasing;
-    private int releaseCooldown = RELEASE_INTERVAL_TICKS;
 
     public ShadeEntity(EntityType<? extends ShadeEntity> type, Level level) {
         super(type, level);
@@ -59,7 +55,6 @@ public class ShadeEntity extends Entity {
         this.storedItemCount = Math.max(0L, tag.getLong(TAG_STORED_COUNT));
 
         this.releasing = tag.getBoolean(TAG_RELEASING);
-        this.releaseCooldown = Mth.clamp(tag.getInt(TAG_RELEASE_COOLDOWN), 1, RELEASE_INTERVAL_TICKS);
     }
 
     @Override
@@ -72,7 +67,6 @@ public class ShadeEntity extends Entity {
 
         tag.putLong(TAG_STORED_COUNT, this.storedItemCount);
         tag.putBoolean(TAG_RELEASING, this.releasing);
-        tag.putInt(TAG_RELEASE_COOLDOWN, this.releaseCooldown);
     }
 
     @Override
@@ -100,12 +94,8 @@ public class ShadeEntity extends Entity {
         }
 
         this.releasing = true;
-        if (--this.releaseCooldown > 0) {
-            return;
-        }
-
-        this.releaseCooldown = RELEASE_INTERVAL_TICKS;
-        releaseOneStoredItem();
+        int freeEntitySlots = TARGET_VISIBLE_ITEM_ENTITIES - visibleMatchingEntities;
+        releaseStoredItemsUpToVisibleTarget(freeEntitySlots);
         if (this.storedItemCount <= 0L) {
             this.discard();
         }
@@ -151,7 +141,6 @@ public class ShadeEntity extends Entity {
         this.templateStack = sampleStack.copy();
         this.templateStack.setCount(1);
         this.releasing = false;
-        this.releaseCooldown = RELEASE_INTERVAL_TICKS;
     }
 
     public BlockPos getAnchorPos() {
@@ -189,7 +178,6 @@ public class ShadeEntity extends Entity {
 
         this.storedItemCount += stack.getCount();
         this.releasing = false;
-        this.releaseCooldown = RELEASE_INTERVAL_TICKS;
         itemEntity.discard();
         return true;
     }
@@ -203,8 +191,8 @@ public class ShadeEntity extends Entity {
         ).size();
     }
 
-    private void releaseOneStoredItem() {
-        if (this.storedItemCount <= 0L) {
+    private void releaseStoredItemsUpToVisibleTarget(int freeEntitySlots) {
+        if (this.storedItemCount <= 0L || freeEntitySlots <= 0) {
             return;
         }
 
@@ -212,13 +200,21 @@ public class ShadeEntity extends Entity {
             return;
         }
 
-        int releaseCount = (int) Math.min(this.templateStack.getMaxStackSize(), this.storedItemCount);
-        ItemStack releasedStack = this.templateStack.copy();
-        releasedStack.setCount(releaseCount);
+        int maxStackSize = Math.max(1, this.templateStack.getMaxStackSize());
+        long maxReleasableByEntityCap = (long) freeEntitySlots * maxStackSize;
+        long toRelease = Math.min(this.storedItemCount, maxReleasableByEntityCap);
 
-        ItemEntity restored = new ItemEntity(serverLevel, this.getX(), this.getY(), this.getZ(), releasedStack);
-        restored.setDeltaMovement(Vec3.ZERO);
-        serverLevel.addFreshEntity(restored);
-        this.storedItemCount -= releaseCount;
+        while (toRelease > 0L) {
+            int releaseCount = (int) Math.min(maxStackSize, toRelease);
+            ItemStack releasedStack = this.templateStack.copy();
+            releasedStack.setCount(releaseCount);
+
+            ItemEntity restored = new ItemEntity(serverLevel, this.getX(), this.getY(), this.getZ(), releasedStack);
+            restored.setDeltaMovement(Vec3.ZERO);
+            serverLevel.addFreshEntity(restored);
+
+            this.storedItemCount -= releaseCount;
+            toRelease -= releaseCount;
+        }
     }
 }

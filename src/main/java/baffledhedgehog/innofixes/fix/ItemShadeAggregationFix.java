@@ -22,8 +22,7 @@ import net.minecraftforge.fml.common.Mod;
 public final class ItemShadeAggregationFix {
     private static final int ABSORB_TRIGGER_VISIBLE_ITEMS = ShadeEntity.ABSORB_TRIGGER_VISIBLE_ITEM_ENTITIES;
     private static final int TARGET_VISIBLE_ITEMS = ShadeEntity.TARGET_VISIBLE_ITEM_ENTITIES;
-    private static final int SCAN_INTERVAL_TICKS = 10;
-    private static final int MAX_ABSORPTIONS_PER_SCAN = 4096;
+    private static final int SCAN_INTERVAL_TICKS = 1;
 
     private ItemShadeAggregationFix() {
     }
@@ -38,7 +37,7 @@ public final class ItemShadeAggregationFix {
             return;
         }
 
-        if (serverLevel.getGameTime() % SCAN_INTERVAL_TICKS != 0L) {
+        if (SCAN_INTERVAL_TICKS > 1 && serverLevel.getGameTime() % SCAN_INTERVAL_TICKS != 0L) {
             return;
         }
 
@@ -66,12 +65,7 @@ public final class ItemShadeAggregationFix {
             }
         }
 
-        int absorbedThisScan = 0;
         for (Map.Entry<Long, List<ItemEntity>> cellEntry : itemsByCell.entrySet()) {
-            if (absorbedThisScan >= MAX_ABSORPTIONS_PER_SCAN) {
-                return;
-            }
-
             List<ItemEntity> cellItems = cellEntry.getValue();
             if (cellItems.size() <= ABSORB_TRIGGER_VISIBLE_ITEMS) {
                 continue;
@@ -88,18 +82,13 @@ public final class ItemShadeAggregationFix {
             }
 
             for (List<ItemEntity> identicalItems : groupedByStack.values()) {
-                if (absorbedThisScan >= MAX_ABSORPTIONS_PER_SCAN) {
-                    return;
-                }
-
                 int identicalCount = identicalItems.size();
                 if (identicalCount <= ABSORB_TRIGGER_VISIBLE_ITEMS) {
                     continue;
                 }
 
                 long cellKey = cellEntry.getKey();
-                int remainingBudget = MAX_ABSORPTIONS_PER_SCAN - absorbedThisScan;
-                int toAbsorb = Math.min(identicalCount - TARGET_VISIBLE_ITEMS, remainingBudget);
+                int toAbsorb = identicalCount - TARGET_VISIBLE_ITEMS;
                 if (toAbsorb <= 0) {
                     continue;
                 }
@@ -126,7 +115,6 @@ public final class ItemShadeAggregationFix {
 
                     if (targetShade.absorb(itemEntity)) {
                         toAbsorb--;
-                        absorbedThisScan++;
                     }
                 }
             }

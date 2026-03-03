@@ -4,10 +4,12 @@
     "package": "baffledhedgehog.innofixes.mixin",
     "refmap": "mixins.innofixes.refmap.json",
     "mixins": [
+        "AsyncLocatorTimeoutMixin",
         "ApotheosisFlightPotionIngredientMixin",
         "FactionRitualAttemptMarkerMixin",
         "FactionTier5OcculusPromptMixin",
         "ManaweaveRecognitionEngineSafetyMixin",
+        "RitualEffectLocateAsyncMixin",
         "RunePatternDurabilityMixin",
         "TierFiveAscensionGateMixin",
         "RunicAnvilHammerCooldownMixin"

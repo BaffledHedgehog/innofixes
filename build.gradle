@@ -55,6 +55,7 @@ dependencies {
   annotationProcessor "org.spongepowered:mixin:${project.mixin_version}:processor"
   compileOnly "javax.annotation:javax.annotation-api:1.3.2"
 
+  // Pull every local mod directly from libs/*.jar for both compile and runtime.
   def localModCoordinates = fileTree(dir: 'libs', include: ['*.jar']).files
     .collect { file -> file.name.substring(0, file.name.length() - 4) }
     .collect { artifactBase ->
