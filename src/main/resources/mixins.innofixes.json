@@ -6,11 +6,14 @@
     "mixins": [
         "AsyncLocatorTimeoutMixin",
         "ApotheosisFlightPotionIngredientMixin",
+        "ClientSchematicLoaderFormatsMixin",
         "FactionRitualAttemptMarkerMixin",
         "FactionTier5OcculusPromptMixin",
         "ManaweaveRecognitionEngineSafetyMixin",
         "RitualEffectLocateAsyncMixin",
         "RunePatternDurabilityMixin",
+        "SchematicItemExtendedFormatsMixin",
+        "ServerSchematicLoaderFormatsMixin",
         "TierFiveAscensionGateMixin",
         "RunicAnvilHammerCooldownMixin"
     ],

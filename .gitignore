@@ -14,3 +14,11 @@ help stuff/
 .tmp_mna/
 .tmp_mna_Classes/
 .tmp_innoadditions/
+.tmp_guideentries
+.tmp_guideentry
+.tmp_RitualRecipe_javap
+.tmp_ServerSchematicLoader
+.tmp_create_decomp/
+.tmp_ff_classes/
+.tmp_ff_out/
+.tmp_innoadditions/

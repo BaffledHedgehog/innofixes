@@ -59,6 +59,13 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.innofixes]]
+modId="tconstruct"
+mandatory=true
+versionRange="[3.11.2,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.innofixes]]
 modId="mna"
 mandatory=true
 versionRange="[3.1.11,)"
