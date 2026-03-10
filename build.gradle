@@ -48,12 +48,37 @@ repositories {
   flatDir { dirs 'libs' }
 }
 
+def valkyrienSkiesJars = fileTree(dir: 'libs', include: ['valkyrienskies-*.jar']).files
+  .sort { a, b -> a.name <=> b.name }
+def valkyrienSkiesJar = valkyrienSkiesJars ? valkyrienSkiesJars.last() : null
+
+def extractVsEmbeddedCompileLibs = tasks.register("extractVsEmbeddedCompileLibs", Copy) {
+  if (valkyrienSkiesJar == null) {
+    enabled = false
+  } else {
+    from(zipTree(valkyrienSkiesJar)) {
+      include "META-INF/jars/api-*.jar"
+      include "META-INF/jars/joml-primitives-*.jar"
+      eachFile { details ->
+        details.path = details.name
+      }
+      includeEmptyDirs = false
+    }
+    into layout.buildDirectory.dir("vs-embedded-compile-libs")
+  }
+}
+def vsEmbeddedCompileLibsDir = layout.buildDirectory.dir("vs-embedded-compile-libs")
+
 dependencies {
   minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
   compileOnly "org.spongepowered:mixin:${project.mixin_version}"
   annotationProcessor "org.spongepowered:mixin:${project.mixin_version}:processor"
   compileOnly "javax.annotation:javax.annotation-api:1.3.2"
+  compileOnly "org.jetbrains.kotlin:kotlin-stdlib:1.9.24"
+
+  // VS ships API is packed as jar-in-jar; expose it on compile classpath for typed mixin code.
+  compileOnly fileTree(vsEmbeddedCompileLibsDir) { include "*.jar" }
 
   // Pull every local mod directly from libs/*.jar for both compile and runtime.
   def localModCoordinates = fileTree(dir: 'libs', include: ['*.jar']).files
@@ -79,6 +104,7 @@ mixin {
 }
 
 tasks.withType(JavaCompile).configureEach {
+  dependsOn extractVsEmbeddedCompileLibs
   options.encoding = 'UTF-8'
 }
 
