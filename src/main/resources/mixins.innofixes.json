@@ -6,17 +6,22 @@
     "mixins": [
         "AsyncLocatorTimeoutMixin",
         "ApotheosisFlightPotionIngredientMixin",
+        "ChunkGeneratorCreateStructuresFarChunkGuardMixin",
         "ClientSchematicLoaderFormatsMixin",
+        "ClockworkClientMenuSpamGuardMixin",
         "ClipboardScreenReadonlySyncGuardMixin",
+        "EntitySetPosRawSanityMixin",
         "FactionRitualAttemptMarkerMixin",
         "FactionTier5OcculusPromptMixin",
         "ManaweaveRecognitionEngineSafetyMixin",
         "RitualEffectLocateAsyncMixin",
         "RunePatternDurabilityMixin",
+        "ServerPlayerPositionSanityMixin",
         "SchematicItemExtendedFormatsMixin",
         "ServerSchematicLoaderFormatsMixin",
         "TierFiveAscensionGateMixin",
         "RunicAnvilHammerCooldownMixin",
+        "VSGameUtilsClientShipWorldGuardMixin",
         "VLibEntityCollisionDimensionFilterMixin"
     ],
     "client": [

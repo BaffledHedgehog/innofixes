@@ -15,12 +15,14 @@ import org.valkyrienskies.core.internal.ships.VsiQueryableShipData;
 import org.valkyrienskies.mod.common.VSGameUtilsKt;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collections;
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 @Mixin(targets = "g_mungus.vlib.util.EntityCollisionUtilsKt", remap = false)
 public abstract class VLibEntityCollisionDimensionFilterMixin {
+    private static final double MAX_ABS_WORLD_COORD = 30_000_000.0;
+
     @Redirect(
         method = "getShipPolygonsCollidingWithEntity",
         at = @At(
@@ -38,84 +40,69 @@ public abstract class VLibEntityCollisionDimensionFilterMixin {
         final Level world,
         final VsiEntityPolygonCollider collider
     ) {
+        if (!innofixes$isValidAabb(aabb) || !innofixes$isReasonableWorldAabb(aabb)) {
+            return Collections.emptyList();
+        }
         final String dimensionId = VSGameUtilsKt.getDimensionId(world);
-        return innofixes$collectShipsByChunkWindow(shipData, aabb, dimensionId);
+        return innofixes$collectShipsByShipMap(shipData, aabb, dimensionId);
     }
 
-    private static Iterable<?> innofixes$collectShipsByChunkWindow(
+    private static Iterable<?> innofixes$collectShipsByShipMap(
         final VsiQueryableShipData<?> shipData,
         final AABBdc aabb,
         final String dimensionId
     ) {
-        final int minChunkX = innofixes$blockToChunk(aabb.minX());
-        final int maxChunkX = innofixes$blockToChunk(Math.nextAfter(aabb.maxX(), Double.NEGATIVE_INFINITY));
-        final int minChunkZ = innofixes$blockToChunk(aabb.minZ());
-        final int maxChunkZ = innofixes$blockToChunk(Math.nextAfter(aabb.maxZ(), Double.NEGATIVE_INFINITY));
-
         final List<Ship> snapshot = new ArrayList<>();
-        final Set<Long> seenIds = new HashSet<>();
-
-        int chunkX = minChunkX;
-        while (true) {
-            int chunkZ = minChunkZ;
-            while (true) {
-                final Ship ship = innofixes$getShipByChunkPos(shipData, chunkX, chunkZ, dimensionId);
-                if (ship != null
-                    && seenIds.add(ship.getId())
-                    && dimensionId.equals(ship.getChunkClaimDimension())
-                    && innofixes$intersects(aabb, ship.getWorldAABB())) {
-                    snapshot.add(ship);
-                }
-
-                if (chunkZ == maxChunkZ || chunkZ == Integer.MAX_VALUE) {
-                    break;
-                }
-                chunkZ++;
-            }
-
-            if (chunkX == maxChunkX || chunkX == Integer.MAX_VALUE) {
-                break;
-            }
-            chunkX++;
-        }
-
-        return snapshot;
-    }
-
-    private static Ship innofixes$getShipByChunkPos(
-        final VsiQueryableShipData<?> shipData,
-        final int chunkX,
-        final int chunkZ,
-        final String dimensionId
-    ) {
         try {
-            return shipData.getByChunkPos(chunkX, chunkZ, dimensionId);
-        } catch (final Throwable ignored) {
-            try {
-                final Ship ship = shipData.getByChunkPos(chunkX, chunkZ);
-                if (ship != null && dimensionId.equals(ship.getChunkClaimDimension())) {
-                    return ship;
+            final Map<Long, ?> idToShipData = shipData.getIdToShipData();
+            idToShipData.forEach((id, value) -> {
+                if (!(value instanceof Ship ship)) {
+                    return;
                 }
-            } catch (final Throwable ignoredFallback) {
-                return null;
-            }
-            return null;
+                if (!dimensionId.equals(ship.getChunkClaimDimension())) {
+                    return;
+                }
+                final AABBdc shipWorldAabb = ship.getWorldAABB();
+                if (!innofixes$isValidAabb(shipWorldAabb) || !innofixes$isReasonableWorldAabb(shipWorldAabb)) {
+                    return;
+                }
+                if (!innofixes$intersects(aabb, shipWorldAabb)) {
+                    return;
+                }
+                snapshot.add(ship);
+            });
+        } catch (final Throwable ignored) {
+            // Return whatever was safely gathered before an unexpected map iteration failure.
         }
-    }
-
-    private static int innofixes$blockToChunk(final double coordinate) {
-        if (coordinate <= Integer.MIN_VALUE) {
-            return Integer.MIN_VALUE >> 4;
-        }
-        if (coordinate >= Integer.MAX_VALUE) {
-            return Integer.MAX_VALUE >> 4;
-        }
-        return ((int) Math.floor(coordinate)) >> 4;
+        return snapshot;
     }
 
     private static boolean innofixes$intersects(final AABBdc a, final AABBdc b) {
         return a.minX() <= b.maxX() && a.maxX() >= b.minX()
             && a.minY() <= b.maxY() && a.maxY() >= b.minY()
             && a.minZ() <= b.maxZ() && a.maxZ() >= b.minZ();
+    }
+
+    private static boolean innofixes$isValidAabb(final AABBdc box) {
+        return box != null
+            && innofixes$isFinite(box.minX()) && innofixes$isFinite(box.maxX())
+            && innofixes$isFinite(box.minY()) && innofixes$isFinite(box.maxY())
+            && innofixes$isFinite(box.minZ()) && innofixes$isFinite(box.maxZ())
+            && box.minX() <= box.maxX()
+            && box.minY() <= box.maxY()
+            && box.minZ() <= box.maxZ();
+    }
+
+    private static boolean innofixes$isReasonableWorldAabb(final AABBdc box) {
+        return Math.abs(box.minX()) <= MAX_ABS_WORLD_COORD
+            && Math.abs(box.maxX()) <= MAX_ABS_WORLD_COORD
+            && Math.abs(box.minY()) <= MAX_ABS_WORLD_COORD
+            && Math.abs(box.maxY()) <= MAX_ABS_WORLD_COORD
+            && Math.abs(box.minZ()) <= MAX_ABS_WORLD_COORD
+            && Math.abs(box.maxZ()) <= MAX_ABS_WORLD_COORD;
+    }
+
+    private static boolean innofixes$isFinite(final double value) {
+        return Double.isFinite(value);
     }
 }
