@@ -22,3 +22,5 @@ help stuff/
 .tmp_ff_classes/
 .tmp_ff_out/
 .tmp_innoadditions/
+.tmp_*
+.tmp_*/
