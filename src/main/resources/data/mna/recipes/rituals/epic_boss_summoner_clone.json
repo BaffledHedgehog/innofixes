@@ -1,0 +1,58 @@
+{
+	"type": "mna:ritual",
+	"tier": 3,
+	"pattern":
+	[
+		[ 0, 1, 1, 1, 1],
+		[ 1, 0, 0, 1, 1],
+		[ 1, 0, 1, 0, 1],
+		[ 1, 1, 0, 0, 1],
+		[ 1, 1, 1, 1, 0]
+	],
+	"reagents":
+	[
+		" DDD ",
+		"D   D",
+		"B A C",
+		"D   D",
+		" DDD "
+	],
+	"keys":
+	{
+        "A":
+        {
+          "item": "innoadditions:epic_boss_summoner",
+          "optional": false,
+          "consume": false
+        },"B":
+        {
+          "item": "fdbosses:lightning_core",
+          "optional": false,
+          "consume": false
+        },"C":
+        {
+          "item": "fdbosses:justice_core",
+          "optional": false,
+          "consume": false
+        },"D":
+        {
+          "item": "minecraft:diamond",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/circle",
+		"mna:manaweave_patterns/knot3",
+		"mna:manaweave_patterns/circle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"connectBeam": true
+	},
+    "createsItem":	"1 innoadditions:epic_boss_summoner"
+}

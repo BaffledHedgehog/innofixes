@@ -7,9 +7,6 @@
         "AsyncLocatorTimeoutMixin",
         "ApotheosisFlightPotionIngredientMixin",
         "ChunkGeneratorCreateStructuresFarChunkGuardMixin",
-        "ClientSchematicLoaderFormatsMixin",
-        "ClockworkClientMenuSpamGuardMixin",
-        "ClipboardScreenReadonlySyncGuardMixin",
         "EntitySetPosRawSanityMixin",
         "FactionRitualAttemptMarkerMixin",
         "FactionTier5OcculusPromptMixin",
@@ -21,10 +18,13 @@
         "ServerSchematicLoaderFormatsMixin",
         "TierFiveAscensionGateMixin",
         "RunicAnvilHammerCooldownMixin",
-        "VSGameUtilsClientShipWorldGuardMixin",
         "VLibEntityCollisionDimensionFilterMixin"
     ],
     "client": [
+        "ClientSchematicLoaderFormatsMixin",
+        "ClipboardScreenReadonlySyncGuardMixin",
+        "ClockworkClientMenuSpamGuardMixin",
+        "VSGameUtilsClientShipWorldGuardMixin"
     ],
     "debug": {
         "export": true

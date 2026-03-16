@@ -1,0 +1,42 @@
+{
+	"type": "mna:eldrin-altar",
+	"output": "innoadditions:mythic_boss_summoner",
+	"tier": 5,
+	"items": [
+		"innoadditions:epic_boss_summoner",
+		"apotheosis:epic_material",
+		"tconstruct:pig_iron_block",
+        "cataclysm:essence_of_the_storm",
+        "cataclysm:abyssal_egg",
+        "cataclysm:cursium_ingot",
+        "mna:greater_mote_fire",
+        "cataclysm:ignitium_block",
+        "fdbosses:fire_and_ice_core"
+    ],
+	"power_requirements": [
+		{
+			"affinity": "ARCANE",
+			"amount": 6000
+		},
+		{
+			"affinity": "AIR",
+			"amount": 6000
+		},
+		{
+			"affinity": "FIRE",
+			"amount": 6000
+		},
+		{
+			"affinity": "WATER",
+			"amount": 6000
+		},
+		{
+			"affinity": "EARTH",
+			"amount": 6000
+		},
+		{
+			"affinity": "ENDER",
+			"amount": 6000
+		}
+	]
+}

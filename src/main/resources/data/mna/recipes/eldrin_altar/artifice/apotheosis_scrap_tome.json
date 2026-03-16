@@ -17,11 +17,11 @@
   "power_requirements": [
     {
       "affinity": "ARCANE",
-      "amount": 1000
+      "amount": 500
     },
     {
       "affinity": "ENDER",
-      "amount": 500
+      "amount": 250
     }
   ]
 }

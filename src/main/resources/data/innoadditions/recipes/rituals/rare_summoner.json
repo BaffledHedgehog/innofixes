@@ -1,0 +1,89 @@
+{
+	"type": "mna:ritual",
+	"tier": 3,
+	"pattern":
+	[
+		[ 1, 0, 0, 1, 0, 0, 0 ],
+		[ 0, 0, 1, 1, 1, 0, 0 ],
+		[ 0, 1, 0, 0, 0, 1, 0 ],
+		[ 1, 1, 0, 1, 0, 1, 1 ],
+		[ 0, 1, 0, 0, 0, 1, 0 ],
+		[ 0, 0, 1, 1, 1, 0, 0 ],
+		[ 0, 0, 0, 1, 0, 0, 1 ]
+	],	
+	"reagents":
+	[
+		"F  E   ",
+		"   M   ",
+		"       ",
+		"WM S MT",
+		"       ",
+		"   M   ",
+		"   I  A"
+	],
+	"keys":
+	{
+		"A": 
+		{ 
+			"item": "mna:mote_arcane",
+			"optional": false,
+			"consume": false
+		},
+        "I":
+        {
+          "item": "mna:mote_air",
+          "optional": false,
+          "consume": false
+        },
+        "W":
+        {
+          "item": "mna:mote_water",
+          "optional": false,
+          "consume": false
+        },
+        "F":
+        {
+          "item": "mna:mote_fire",
+          "optional": false,
+          "consume": false
+        },
+        "E":
+        {
+          "item": "mna:mote_ender",
+          "optional": false,
+          "consume": false
+        },
+        "T":
+        {
+          "item": "mna:mote_earth",
+          "optional": false,
+          "consume": false
+        },
+        "M":
+        {
+          "item": "apotheosis:rare_material",
+          "optional": false,
+          "consume": true
+        },
+        "S":
+        {
+          "item": "innoadditions:uncommon_boss_summoner",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/triangle",
+		"mna:manaweave_patterns/square",
+		"mna:manaweave_patterns/circle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"connectBeam": false
+	},
+    "createsItem":	"4 innoadditions:rare_boss_summoner"
+}

@@ -1,0 +1,125 @@
+{
+	"type": "mna:ritual",
+	"tier": 3,
+	"pattern":
+	[
+		[ 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1],
+		[ 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1],
+		[ 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1],
+		[ 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1],
+		[ 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0],
+		[ 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0],
+		[ 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+		[ 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+		[ 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0],
+		[ 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
+		[ 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],
+		[ 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0],
+		[ 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0],
+		[ 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0],
+		[ 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0],
+		[ 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0]
+	],
+	"reagents":
+	[
+		"         6  6   ",
+		"        6  6    ",
+		"       6  6     ",
+		"      6  6      ",
+		"     5  6       ",
+		"       3   B    ",
+		"     1          ",
+		"    6   D       ",
+		"   6   GAE   2  ",
+		"  6     F    6  ",
+		" 6           6  ",
+		"6    C      6   ",
+		"         6 6    ",
+		"  4     6   6   ",
+		" 6     6     6  ",
+		"6     6      6  "
+	],
+	"keys":
+	{
+        "A":
+        {
+          "item": "innoadditions:mythic_boss_summoner",
+          "optional": false,
+          "consume": false
+        },"B":
+        {
+          "item": "fdbosses:fire_and_ice_core",
+          "optional": false,
+          "consume": false
+        },"C":
+        {
+          "item": "mna:wand_clone",
+          "optional": false,
+          "consume": false
+        },"D":
+        {
+          "item": "bosses_of_mass_destruction:ancient_anima",
+          "optional": false,
+          "consume": false
+        },"E":
+        {
+          "item": "bosses_of_mass_destruction:blazing_eye",
+          "optional": false,
+          "consume": false
+        },"F":
+        {
+          "item": "bosses_of_mass_destruction:obsidian_heart",
+          "optional": false,
+          "consume": false
+        },"G":
+        {
+          "item": "bosses_of_mass_destruction:void_thorn",
+          "optional": false,
+          "consume": false
+        },"1":
+        {
+          "item": "minecraft:totem_of_undying",
+          "optional": false,
+          "consume": true
+        },"2":
+        {
+          "item": "vstuff:energy_core",
+          "optional": false,
+          "consume": true
+        },"3":
+        {
+          "item": "integrateddynamics:proto_chorus",
+          "optional": false,
+          "consume": true
+        },"4":
+        {
+          "item": "apotheosis:warden_tendril",
+          "optional": false,
+          "consume": true
+        },"5":
+        {
+          "item": "hexcasting:quenched_allay",
+          "optional": false,
+          "consume": true
+        },"6":
+        {
+          "item": "minecraft:diamond",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/circle",
+		"mna:manaweave_patterns/knot3",
+		"mna:manaweave_patterns/circle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"connectBeam": true
+	},
+    "createsItem":	"2 innoadditions:mythic_boss_summoner"
+}
