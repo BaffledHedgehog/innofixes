@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Specification-Title: innofixes
-Specification-Version: 1.2.3.4
+Specification-Version: 1.2.3.5
 Implementation-Title: innofixes
-Implementation-Version: 1.2.3.4
+Implementation-Version: 1.2.3.5
 MixinConfigs: mixins.innofixes.json
 
