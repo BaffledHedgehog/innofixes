@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.necr0manthre.innoadditions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "innoadditions.refmap.json",
+  "mixins": [
+    "AncientCouncilMixin",
+    "ApothBossMixin",
+    "BossEventsMixin",
+    "BossSpawnerMixin",
+    "CouncilMixin",
+    "DemonLordMixin",
+    "DemonsMixin",
+    "EffectColdDarkMixin",
+    "ExplosionMixin",
+    "FaerieQueenMixin",
+    "FeyCourtMixin",
+    "RitualRecipeMixin",
+    "UndeadMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

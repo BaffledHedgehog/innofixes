@@ -54,5 +54,5 @@
 		"displayIndexes": false,
 		"connectBeam": true
 	},
-    "createsItem":	"1 innoadditions:epic_boss_summoner"
+    "createsItem":	"innoadditions:epic_boss_summoner"
 }
